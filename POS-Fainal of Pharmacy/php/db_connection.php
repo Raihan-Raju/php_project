@@ -2,7 +2,7 @@
   $SERVER = 'localhost';
   $USERNAME = 'root';
   $PASSWORD = '';
-  $DB = 'point_of_sell';
+  $DB = 'point_of_sels';
 
   @$con = mysqli_connect($SERVER, $USERNAME, $PASSWORD, $DB)
   or

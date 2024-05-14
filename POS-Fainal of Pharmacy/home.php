@@ -1,3 +1,16 @@
+<?php
+ session_start();
+
+  $sessioninfo = $_SESSION["sname"];
+if (empty($sessioninfo)){
+    header('location:index.php');
+}
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

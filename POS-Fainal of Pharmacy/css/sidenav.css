@@ -32,7 +32,8 @@ body {
 
 .logo .profile {
   margin-left: 50%;
-  border-radius: 50%;
+  width: 200px;
+  border-radius: 5px;
   transform: translate(-50%);
 }
 

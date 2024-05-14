@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-$conn = new mysqli('localhost','root','','pos_project');
+$conn = new mysqli('localhost','root','','point_of_sels');
 
 if(isset($_POST["btnLogin"])){
     $username = $_POST["txtUsername"];

@@ -1,20 +1,7 @@
 <?php
-  require "php/db_connection.php";
+    session_start(); 
+    session_destroy();
+    session_destroy();
+    header('location:index.php');
 
-  if($con) {
-    $query = "UPDATE admin_credentials SET IS_LOGGED_IN = 'false'";
-    $result = mysqli_query($con, $query);
-  }
 ?>
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Logout</title>
-    <script src="js/restrict.js"></script>
-  </head>
-  <body>
-
-  </body>
-</html>
