@@ -116,7 +116,8 @@
           </div>
 
           <div class="row col col-md-12 " id="invoice_medicine_list_div">
-            <script> addRow(); getInvoiceNumber(); </script>
+            <script> addRow();getInvoiceNumber();</script>
+            <!--jodi jhamala hoi ai funtion ta script er vatore bosbe... getInvoiceNumber(); -->
           </div>
           <!-- end medicines -->
 
