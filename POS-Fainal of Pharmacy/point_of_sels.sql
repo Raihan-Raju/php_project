@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2024 at 05:07 AM
+-- Generation Time: May 23, 2024 at 02:28 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `point_of_seles`
+-- Database: `point_of_sels`
 --
 
 -- --------------------------------------------------------
@@ -59,10 +59,8 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`ID`, `NAME`, `CONTACT_NUMBER`, `ADDRESS`, `DOCTOR_NAME`, `DOCTOR_ADDRESS`) VALUES
-(4, 'Kiran Suthar', '1234567690', 'Andheri East', 'Anshari', 'Andheri East'),
 (6, 'Aditya', '7365687269', 'Virar West', 'Xyz', 'Virar West'),
-(15, 'Aditya', '0123654478', '12/lalbugh', 'Raju', '24/azimpur'),
-(16, 'Adi', '0123654563', '25/azimpur', 'Raju', '52/lalbugh');
+(17, 'Rakib Boss', '0123654789', '52/lalabugh', 'Raju', '58/malibufh');
 
 -- --------------------------------------------------------
 
@@ -85,7 +83,9 @@ CREATE TABLE `invoices` (
 
 INSERT INTO `invoices` (`INVOICE_ID`, `NET_TOTAL`, `INVOICE_DATE`, `CUSTOMER_ID`, `TOTAL_AMOUNT`, `TOTAL_DISCOUNT`) VALUES
 (1, 30, '2021-10-19', 14, 30, 0),
-(2, 2626, '2021-10-19', 6, 2626, 0);
+(2, 2626, '2021-10-19', 6, 2626, 0),
+(3, 5146.96, '2024-05-20', 17, 5252, 105.04),
+(4, 63.994, '2024-05-20', 17, 65.3, 1.306);
 
 -- --------------------------------------------------------
 
@@ -133,10 +133,10 @@ CREATE TABLE `medicines_stock` (
 --
 
 INSERT INTO `medicines_stock` (`ID`, `NAME`, `BATCH_ID`, `EXPIRY_DATE`, `QUANTITY`, `MRP`, `RATE`) VALUES
-(1, 'Crosin', 'CROS12', '12/34', 2, 2626, 26),
+(1, 'Crosin', 'CROS12', '12/34', 0, 2626, 26),
 (2, 'Gelusil', 'G327', '12/42', 0, 15, 12),
 (3, 'Dolo 650', 'DOLO327', '01/25', 3, 30, 24),
-(4, 'Nicip Plus', 'NI325', '05/25', 3, 32.65, 28);
+(4, 'Nicip Plus', 'NI325', '05/25', 1, 32.65, 28);
 
 -- --------------------------------------------------------
 
@@ -258,13 +258,13 @@ ALTER TABLE `suppliers`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `INVOICE_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `INVOICE_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `medicines`
