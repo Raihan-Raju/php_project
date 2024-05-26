@@ -42,7 +42,7 @@
         <!-- header section -->
         <?php
           require "php/header.php";
-          createHeader('clipboard', 'New Seles', 'Create New ');
+          createHeader('clipboard', 'Add Return', 'Create New Return ');
         ?>
         <!-- header section end -->
 
@@ -81,7 +81,7 @@
           <!-- customer details content end -->
 
           <!-- new user button -->
-          <div class="row col col-md-12">
+          <!-- <div class="row col col-md-12">
             <div class="col col-md-2 form-group">
               <button class="btn btn-primary form-control" onclick="document.getElementById('add_new_customer_model').style.display = 'block';">New Customer</button>
             </div>
@@ -90,7 +90,7 @@
               <label class="font-weight-bold" for="customers_contact_number">Contact Number :</label>
               <input id="customers_contact_number" type="number" class="form-control" name="customers_contact_number" placeholder="Contact Number" disabled>
             </div>
-          </div>
+          </div> -->
           <!-- closing new user button -->
 
           <div class="col col-md-12">
@@ -127,10 +127,10 @@
               <label class="font-weight-bold" for="">Total Amount:</label>
               <input type="text" class="form-control" value="0" id="total_amount" disabled>
             </div>
-            <div class="col col-md-2 form-group float-right">
+            <!-- <div class="col col-md-2 form-group float-right">
               <label class="font-weight-bold" for="">Total Discount :</label>
               <input type="text" class="form-control" value="0" id="total_discount" disabled>
-            </div>
+            </div> -->
             <div class="col col-md-2 form-group float-right">
               <label class="font-weight-bold" for="">Net Total :</label>
               <input type="text" class="form-control" value="0" id="net_total" disabled>
